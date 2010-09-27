@@ -1,0 +1,457 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="content-type" content="text/html; charset=Shift_JIS">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 12.0.0.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>仕事のステータス</title>
+<style type="text/css">
+<!--
+
+.tyuu {  font-size: 13px; color: #ff6600;}	/*ステータス中見出し*/
+
+.job_style { background-color:#669966; background-image : url(img/shop_bak.gif);}	/*ハローワークの背景*/
+
+
+.yosumi {  border: #666666; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; background-color:#ffffff;}	/*街ステータス窓*/
+
+body {font-size:13px;color:#000000 ;}
+table {font-size:13px;color:#000000;}
+
+-->
+</style>
+</head><body style="" class=job_style leftmargin=5 topmargin=5 marginwidth=5 marginheight=5>
+	<table width="95%" border="0" cellspacing="1" cellpadding="4" align=center class=yosumi>
+	<tr>
+    <TD colspan="21"><font color=#336699>凡例：(国)＝国語、(数)＝数学、(理)＝理科、(社)＝社会、(英)＝英語、(音)＝音楽、(美)＝美術、(ル)＝ルックス、(体)＝体力、(健)＝健康、(ス)＝スピード、(パ)＝パワー、(腕)＝腕力、(脚)＝脚力、(H)＝エッチ</font></TD>
+  </tr>
+	<tr bgcolor=#ff9933 align=center><td nowrap rowspan=2>職業</td><td colspan=17>必要なパラメータ</td>
+    <td align=center colspan=3>条　件</td>
+  </tr>
+	<tr bgcolor=#ffcc33 align=center><td>国</td><td>数</td><td>理</td><td>社</td><td>英</td><td>音</td><td>美</td><td>ル</td><td>体</td><td>健</td><td>ス</td><td>パ</td><td>腕</td><td>脚</td><td>L</td><td>面</td><td>Ｈ</td><td nowrap>体格指数</td><td nowrap>性別</td><td nowrap>身長</td></tr>
+	
+	<tr bgcolor=#ffcc66 align=center><td nowrap>日払いバイト</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>15-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>コンビニ店員</td><td>0</td><td>50</td><td>0</td><td>50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>60</td><td>50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>コンビニ店長*</td><td>0</td><td>100</td><td>0</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>120</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>八百屋さん</td><td>0</td><td>60</td><td>0</td><td>60</td><td>0</td><td>0</td><td>0</td><td>0</td><td>80</td><td>80</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>新聞配達</td><td>30</td><td>0</td><td>0</td><td>50</td><td>20</td><td>0</td><td>0</td><td>0</td><td>100</td><td>70</td><td>0</td><td>0</td><td>30</td><td>30</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>ファミレス店員</td><td>30</td><td>50</td><td>0</td><td>30</td><td>0</td><td>0</td><td>0</td><td>0</td><td>60</td><td>60</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>16-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>ファミレス店長*</td><td>60</td><td>100</td><td>0</td><td>60</td><td>0</td><td>0</td><td>0</td><td>0</td><td>120</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>16-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>コック</td><td>0</td><td>0</td><td>0</td><td>30</td><td>0</td><td>0</td><td>30</td><td>0</td><td>100</td><td>80</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>高級レストランのコック*</td><td>0</td><td>0</td><td>0</td><td>60</td><td>0</td><td>0</td><td>60</td><td>0</td><td>200</td><td>160</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>料理の鉄人**</td><td>0</td><td>0</td><td>0</td><td>120</td><td>0</td><td>0</td><td>120</td><td>0</td><td>400</td><td>320</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ff9933 align=center><td nowrap rowspan=2>職業</td><td colspan=17>必要なパラメータ</td>
+    <td align=center colspan=3>条　件</td>
+  </tr>
+	<tr bgcolor=#ffcc33 align=center><td>国</td><td>数</td><td>理</td><td>社</td><td>英</td><td>音</td><td>美</td><td>ル</td><td>体</td><td>健</td><td>ス</td><td>パ</td><td>腕</td><td>脚</td><td>L</td><td>面</td><td>Ｈ</td><td nowrap>体格指数</td><td nowrap>性別</td><td nowrap>身長</td></tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>美容師</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>80</td><td>0</td><td>80</td><td>50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>カリスマ美容師*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>160</td><td>0</td><td>160</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>大工</td><td>0</td><td>0</td><td>0</td><td>50</td><td>0</td><td>0</td><td>70</td><td>0</td><td>100</td><td>100</td><td>0</td><td>0</td><td>50</td><td>50</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td>男</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>棟梁*</td><td>0</td><td>0</td><td>0</td><td>100</td><td>0</td><td>0</td><td>140</td><td>0</td><td>200</td><td>200</td><td>0</td><td>0</td><td>100</td><td>100</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td>男</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>漁師</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>150</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>18-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>名漁師*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>300</td><td>240</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>18-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>農家</td><td>0</td><td>0</td><td>60</td><td>30</td><td>0</td><td>0</td><td>0</td><td>0</td><td>150</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>大型農家*</td><td>0</td><td>0</td><td>120</td><td>60</td><td>0</td><td>0</td><td>0</td><td>0</td><td>300</td><td>240</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>カリスマ農家**</td><td>0</td><td>0</td><td>240</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>600</td><td>480</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>サラリーマン</td><td>50</td><td>50</td><td>50</td><td>50</td><td>50</td><td>50</td><td>50</td><td>0</td><td>60</td><td>60</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ff9933 align=center><td nowrap rowspan=2>職業</td><td colspan=17>必要なパラメータ</td>
+    <td align=center colspan=3>条　件</td>
+  </tr>
+	<tr bgcolor=#ffcc33 align=center><td>国</td><td>数</td><td>理</td><td>社</td><td>英</td><td>音</td><td>美</td><td>ル</td><td>体</td><td>健</td><td>ス</td><td>パ</td><td>腕</td><td>脚</td><td>L</td><td>面</td><td>Ｈ</td><td nowrap>体格指数</td><td nowrap>性別</td><td nowrap>身長</td></tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>部長*</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>0</td><td>120</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>常務**</td><td>200</td><td>200</td><td>200</td><td>200</td><td>200</td><td>200</td><td>200</td><td>0</td><td>240</td><td>240</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>社長***</td><td>500</td><td>500</td><td>500</td><td>500</td><td>500</td><td>500</td><td>500</td><td>0</td><td>500</td><td>500</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>会長****</td><td>700</td><td>700</td><td>700</td><td>700</td><td>700</td><td>700</td><td>700</td><td>0</td><td>700</td><td>700</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>看護婦</td><td>40</td><td>60</td><td>60</td><td>40</td><td>0</td><td>0</td><td>0</td><td></td><td>120</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>0</td><td>0</td><td nowrap>17-</td><td>女</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>看護婦長*</td><td>80</td><td>120</td><td>120</td><td>80</td><td>0</td><td>0</td><td>0</td><td></td><td>240</td><td>240</td><td>0</td><td>0</td><td>0</td><td>0</td><td>200</td><td>0</td><td>0</td><td nowrap>17-</td><td>女</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>教師</td><td>80</td><td>80</td><td>80</td><td>80</td><td>80</td><td>80</td><td>80</td><td>0</td><td>60</td><td>50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>教頭先生*</td><td>160</td><td>160</td><td>160</td><td>160</td><td>160</td><td>160</td><td>160</td><td>0</td><td>120</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>校長先生**</td><td>400</td><td>400</td><td>400</td><td>400</td><td>400</td><td>400</td><td>400</td><td>0</td><td>240</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>警官</td><td>50</td><td>0</td><td>0</td><td>50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>150</td><td>150</td><td>0</td><td>50</td><td>100</td><td>50</td><td>0</td><td>0</td><td>0</td><td nowrap>19-</td><td></td>
+    <td nowrap>165</td>
+  </tr>
+	<tr bgcolor=#ff9933 align=center><td nowrap rowspan=2>職業</td><td colspan=17>必要なパラメータ</td>
+    <td align=center colspan=3>条　件</td>
+  </tr>
+	<tr bgcolor=#ffcc33 align=center><td>国</td><td>数</td><td>理</td><td>社</td><td>英</td><td>音</td><td>美</td><td>ル</td><td>体</td><td>健</td><td>ス</td><td>パ</td><td>腕</td><td>脚</td><td>L</td><td>面</td><td>Ｈ</td><td nowrap>体格指数</td><td nowrap>性別</td><td nowrap>身長</td></tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>警部*</td><td>100</td><td>0</td><td>0</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>300</td><td>300</td><td>0</td><td>100</td><td>200</td><td>100</td><td>0</td><td>0</td><td>0</td><td nowrap>19-</td><td></td>
+    <td nowrap>165</td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>警視監**</td><td>200</td><td>0</td><td>0</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>600</td><td>600</td><td>0</td><td>200</td><td>400</td><td>200</td><td>0</td><td>0</td><td>0</td><td nowrap>19-</td><td></td>
+    <td nowrap>165</td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>警視総監***</td><td>400</td><td>0</td><td>0</td><td>400</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1000</td><td>1000</td><td>0</td><td>400</td><td>800</td><td>400</td><td>0</td><td>0</td><td>0</td><td nowrap>19-</td><td></td>
+    <td nowrap>165</td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>大学教授</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>0</td><td>60</td><td>60</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>大学名誉教授*</td><td>300</td><td>300</td><td>300</td><td>300</td><td>300</td><td>300</td><td>300</td><td>0</td><td>120</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>東大名誉教授**</td><td>900</td><td>900</td><td>900</td><td>900</td><td>900</td><td>900</td><td>900</td><td>0</td><td>300</td><td>300</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>編集者</td><td>180</td><td>0</td><td>0</td><td>100</td><td>100</td><td>0</td><td>80</td><td>0</td><td>150</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>チーフエディター*</td><td>360</td><td>0</td><td>0</td><td>200</td><td>200</td><td>0</td><td>160</td><td>0</td><td>300</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>編集長**</td><td>720</td><td>0</td><td>0</td><td>400</td><td>400</td><td>0</td><td>320</td><td>0</td><td>600</td><td>400</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>200</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>銀行員</td><td>80</td><td>150</td><td>150</td><td>100</td><td>80</td><td>0</td><td>0</td><td>0</td><td>100</td><td>80</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ff9933 align=center><td nowrap rowspan=2>職業</td><td colspan=17>必要なパラメータ</td>
+    <td align=center colspan=3>条　件</td>
+  </tr>
+	<tr bgcolor=#ffcc33 align=center><td>国</td><td>数</td><td>理</td><td>社</td><td>英</td><td>音</td><td>美</td><td>ル</td><td>体</td><td>健</td><td>ス</td><td>パ</td><td>腕</td><td>脚</td><td>L</td><td>面</td><td>Ｈ</td><td nowrap>体格指数</td><td nowrap>性別</td><td nowrap>身長</td></tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>銀行支店長*</td><td>160</td><td>300</td><td>300</td><td>200</td><td>160</td><td>0</td><td>0</td><td>0</td><td>200</td><td>160</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>頭取**</td><td>320</td><td>1200</td><td>600</td><td>800</td><td>320</td><td>0</td><td>0</td><td>0</td><td>400</td><td>320</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>商社マン</td><td>100</td><td>150</td><td>150</td><td>100</td><td>150</td><td>0</td><td>0</td><td>0</td><td>120</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>商社（部長）*</td><td>200</td><td>300</td><td>300</td><td>200</td><td>300</td><td>0</td><td>0</td><td>0</td><td>240</td><td>240</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>商社（社長）**</td><td>500</td><td>700</td><td>700</td><td>500</td><td>800</td><td>0</td><td>0</td><td>0</td><td>480</td><td>480</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>学者</td><td>0</td><td>250</td><td>250</td><td>0</td><td>200</td><td>0</td><td>0</td><td>0</td><td>100</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>有名学者*</td><td>0</td><td>500</td><td>500</td><td>0</td><td>400</td><td>0</td><td>0</td><td>0</td><td>200</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>ノーベル賞学者**</td><td>0</td><td>1200</td><td>1200</td><td>0</td><td>800</td><td>0</td><td>0</td><td>0</td><td>400</td><td>400</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>デザイナー</td><td>50</td><td>0</td><td>0</td><td>80</td><td>80</td><td>0</td><td>230</td><td>0</td><td>200</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>有名デザイナー*</td><td>100</td><td>0</td><td>0</td><td>160</td><td>160</td><td>0</td><td>460</td><td>0</td><td>400</td><td>240</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ff9933 align=center><td nowrap rowspan=2>職業</td><td colspan=17>必要なパラメータ</td>
+    <td align=center colspan=3>条　件</td>
+  </tr>
+	<tr bgcolor=#ffcc33 align=center><td>国</td><td>数</td><td>理</td><td>社</td><td>英</td><td>音</td><td>美</td><td>ル</td><td>体</td><td>健</td><td>ス</td><td>パ</td><td>腕</td><td>脚</td><td>L</td><td>面</td><td>Ｈ</td><td nowrap>体格指数</td><td nowrap>性別</td><td nowrap>身長</td></tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>世界的デザイナー**</td><td>200</td><td>0</td><td>0</td><td>320</td><td>320</td><td>0</td><td>900</td><td>0</td><td>800</td><td>480</td><td>0</td><td>0</td><td>0</td><td>0</td><td>300</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>プログラマー</td><td>0</td><td>230</td><td>230</td><td>0</td><td>50</td><td>0</td><td>0</td><td>0</td><td>120</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>有名プログラマー*</td><td>0</td><td>460</td><td>460</td><td>0</td><td>100</td><td>0</td><td>0</td><td>0</td><td>240</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>世界的プログラマー**</td><td>0</td><td>950</td><td>950</td><td>0</td><td>300</td><td>0</td><td>0</td><td>0</td><td>480</td><td>500</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>作詞家</td><td>350</td><td>0</td><td>0</td><td>100</td><td>100</td><td>50</td><td>50</td><td>0</td><td>100</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>有名作詞家*</td><td>700</td><td>0</td><td>0</td><td>200</td><td>200</td><td>100</td><td>100</td><td>0</td><td>200</td><td>240</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>150</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>超売れっ子作詞家**</td><td>1100</td><td>0</td><td>0</td><td>400</td><td>400</td><td>200</td><td>220</td><td>0</td><td>400</td><td>480</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>350</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>作家</td><td>350</td><td>0</td><td>0</td><td>100</td><td>100</td><td>50</td><td>50</td><td>0</td><td>100</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>有名作家*</td><td>700</td><td>0</td><td>0</td><td>200</td><td>200</td><td>100</td><td>100</td><td>0</td><td>200</td><td>240</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>150</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>芥川賞作家**</td><td>1100</td><td>0</td><td>0</td><td>400</td><td>400</td><td>200</td><td>220</td><td>0</td><td>400</td><td>480</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>350</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ff9933 align=center><td nowrap rowspan=2>職業</td><td colspan=17>必要なパラメータ</td>
+    <td align=center colspan=3>条　件</td>
+  </tr>
+	<tr bgcolor=#ffcc33 align=center><td>国</td><td>数</td><td>理</td><td>社</td><td>英</td><td>音</td><td>美</td><td>ル</td><td>体</td><td>健</td><td>ス</td><td>パ</td><td>腕</td><td>脚</td><td>L</td><td>面</td><td>Ｈ</td><td nowrap>体格指数</td><td nowrap>性別</td><td nowrap>身長</td></tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>作曲家</td><td>50</td><td>0</td><td>0</td><td>50</td><td>50</td><td>350</td><td>50</td><td>0</td><td>100</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>有名作曲家*</td><td>100</td><td>0</td><td>0</td><td>100</td><td>100</td><td>700</td><td>100</td><td>0</td><td>200</td><td>240</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>グラミー賞作曲家**</td><td>200</td><td>0</td><td>0</td><td>200</td><td>200</td><td>1400</td><td>200</td><td>0</td><td>400</td><td>480</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>ダンサー</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>250</td><td>50</td><td>250</td><td>150</td><td>120</td><td>100</td><td>0</td><td>0</td><td>50</td><td>50</td><td>0</td><td>0</td><td nowrap>18-22</td><td></td>
+    <td nowrap>165</td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>有名ダンサー*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>500</td><td>100</td><td>500</td><td>300</td><td>240</td><td>200</td><td>0</td><td>0</td><td>150</td><td>150</td><td>0</td><td>0</td><td nowrap>18-22</td><td></td>
+    <td nowrap>165</td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>スーパーダンサー**</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1000</td><td>300</td><td>1000</td><td>600</td><td>480</td><td>400</td><td>0</td><td>0</td><td>300</td><td>300</td><td>0</td><td>0</td><td nowrap>19-21</td><td></td>
+    <td nowrap>170</td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>スチュワーデス</td><td>80</td><td>80</td><td>80</td><td>80</td><td>300</td><td>0</td><td>0</td><td>150</td><td>100</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>0</td><td>0</td><td nowrap>17-24</td><td>女</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>エリート・スチュワーデス*</td><td>160</td><td>160</td><td>160</td><td>160</td><td>600</td><td>0</td><td>0</td><td>300</td><td>200</td><td>240</td><td>0</td><td>0</td><td>0</td><td>0</td><td>150</td><td>0</td><td>0</td><td nowrap>17-24</td><td>女</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>カリスマ・スチュワーデス**</td><td>320</td><td>320</td><td>320</td><td>320</td><td>1200</td><td>0</td><td>0</td><td>600</td><td>400</td><td>480</td><td>0</td><td>0</td><td>0</td><td>0</td><td>500</td><td>0</td><td>0</td><td nowrap>17-22</td><td>女</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>モデル</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>350</td><td>150</td><td>150</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>18-21</td><td></td>
+    <td nowrap>170</td>
+  </tr>
+	<tr bgcolor=#ff9933 align=center><td nowrap rowspan=2>職業</td><td colspan=17>必要なパラメータ</td>
+    <td align=center colspan=3>条　件</td>
+  </tr>
+	<tr bgcolor=#ffcc33 align=center><td>国</td><td>数</td><td>理</td><td>社</td><td>英</td><td>音</td><td>美</td><td>ル</td><td>体</td><td>健</td><td>ス</td><td>パ</td><td>腕</td><td>脚</td><td>L</td><td>面</td><td>Ｈ</td><td nowrap>体格指数</td><td nowrap>性別</td><td nowrap>身長</td></tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>トップモデル*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>700</td><td>300</td><td>300</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>18-21</td><td></td>
+    <td nowrap>170</td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>スーパーモデル**</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>200</td><td>1400</td><td>600</td><td>600</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>18-21</td><td></td>
+    <td nowrap>175</td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>風俗嬢</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>150</td><td>150</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>0</td><td>200</td><td nowrap>17-23</td><td>女</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>売れっ子風俗嬢*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>300</td><td>300</td><td>240</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>0</td><td>400</td><td nowrap>17-23</td><td>女</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>カリスマ風俗嬢**</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>600</td><td>600</td><td>480</td><td>0</td><td>0</td><td>0</td><td>0</td><td>200</td><td>0</td><td>800</td><td nowrap>17-23</td><td>女</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>アナウンサー</td><td>280</td><td>80</td><td>80</td><td>80</td><td>100</td><td>50</td><td>50</td><td>50</td><td>220</td><td>12</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>売れっ子アナウンサー*</td><td>560</td><td>300</td><td>300</td><td>300</td><td>300</td><td>100</td><td>100</td><td>100</td><td>440</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>150</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>超売れっ子アナウンサー**</td><td>1300</td><td>800</td><td>800</td><td>800</td><td>800</td><td>300</td><td>300</td><td>200</td><td>900</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>500</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>AV男優</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>300</td><td>150</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>0</td><td>300</td><td nowrap>18-23</td><td>男</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>有名AV男優*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>200</td><td>600</td><td>300</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>0</td><td>600</td><td nowrap>18-23</td><td>男</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ff9933 align=center><td nowrap rowspan=2>職業</td><td colspan=17>必要なパラメータ</td>
+    <td align=center colspan=3>条　件</td>
+  </tr>
+	<tr bgcolor=#ffcc33 align=center><td>国</td><td>数</td><td>理</td><td>社</td><td>英</td><td>音</td><td>美</td><td>ル</td><td>体</td><td>健</td><td>ス</td><td>パ</td><td>腕</td><td>脚</td><td>L</td><td>面</td><td>Ｈ</td><td nowrap>体格指数</td><td nowrap>性別</td><td nowrap>身長</td></tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>カリスマAV男優**</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>400</td><td>1200</td><td>600</td><td>0</td><td>0</td><td>0</td><td>0</td><td>200</td><td>0</td><td>1200</td><td nowrap>18-23</td><td>男</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>映画監督</td><td>60</td><td>0</td><td>0</td><td>60</td><td>100</td><td>60</td><td>350</td><td>0</td><td>150</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>有名映画監督*</td><td>120</td><td>0</td><td>0</td><td>120</td><td>200</td><td>120</td><td>700</td><td>0</td><td>300</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>150</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>巨匠**</td><td>300</td><td>0</td><td>0</td><td>300</td><td>400</td><td>300</td><td>1400</td><td>0</td><td>600</td><td>400</td><td>0</td><td>0</td><td>0</td><td>0</td><td>400</td><td>400</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>ミュージシャン</td><td>50</td><td>0</td><td>0</td><td>0</td><td>50</td><td>420</td><td>50</td><td>150</td><td>150</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>トップミュージシャン*</td><td>100</td><td>0</td><td>0</td><td>0</td><td>100</td><td>840</td><td>100</td><td>300</td><td>300</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>150</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>世界的ミュージシャン**</td><td>200</td><td>0</td><td>0</td><td>0</td><td>200</td><td>1600</td><td>200</td><td>600</td><td>600</td><td>400</td><td>0</td><td>0</td><td>0</td><td>0</td><td>500</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>お笑い芸人</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>120</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>400</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>売れっ子お笑い芸人*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>240</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>200</td><td>800</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>超売れっ子お笑い芸人**</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>200</td><td>500</td><td>500</td><td>0</td><td>0</td><td>0</td><td>0</td><td>500</td><td>1600</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ff9933 align=center><td nowrap rowspan=2>職業</td><td colspan=17>必要なパラメータ</td>
+    <td align=center colspan=3>条　件</td>
+  </tr>
+	<tr bgcolor=#ffcc33 align=center><td>国</td><td>数</td><td>理</td><td>社</td><td>英</td><td>音</td><td>美</td><td>ル</td><td>体</td><td>健</td><td>ス</td><td>パ</td><td>腕</td><td>脚</td><td>L</td><td>面</td><td>Ｈ</td><td nowrap>体格指数</td><td nowrap>性別</td><td nowrap>身長</td></tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>映画俳優</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>100</td><td>480</td><td>150</td><td>150</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-23</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>有名映画俳優*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>200</td><td>1000</td><td>300</td><td>300</td><td>0</td><td>0</td><td>0</td><td>0</td><td>300</td><td>0</td><td>0</td><td nowrap>17-23</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>世界的映画俳優**</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>300</td><td>500</td><td>1800</td><td>600</td><td>600</td><td>0</td><td>0</td><td>0</td><td>0</td><td>800</td><td>0</td><td>0</td><td nowrap>17-23</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>ゴルファー</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>180</td><td>120</td><td>300</td><td>300</td><td>300</td><td>300</td><td>0</td><td>0</td><td>0</td><td nowrap>18-26</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>トップゴルファー*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>360</td><td>240</td><td>500</td><td>500</td><td>500</td><td>500</td><td>0</td><td>0</td><td>0</td><td nowrap>18-26</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>ゴルファー（賞金王）**</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>800</td><td>500</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>0</td><td>0</td><td>0</td><td nowrap>18-26</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>ボクサー</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>200</td><td>150</td><td>250</td><td>400</td><td>400</td><td>250</td><td>0</td><td>0</td><td>0</td><td nowrap>18-24</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>ボクサー（日本チャンピオン）*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>400</td><td>300</td><td>500</td><td>800</td><td>800</td><td>500</td><td>0</td><td>0</td><td>0</td><td nowrap>19-22</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>ボクサー（世界チャンピオン）**</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>800</td><td>600</td><td>1000</td><td>1600</td><td>1600</td><td>1000</td><td>0</td><td>0</td><td>0</td><td nowrap>20-21</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>パイロット</td><td>50</td><td>300</td><td>300</td><td>100</td><td>450</td><td>0</td><td>0</td><td>0</td><td>150</td><td>180</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>18-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ff9933 align=center><td nowrap rowspan=2>職業</td><td colspan=17>必要なパラメータ</td>
+    <td align=center colspan=3>条　件</td>
+  </tr>
+	<tr bgcolor=#ffcc33 align=center><td>国</td><td>数</td><td>理</td><td>社</td><td>英</td><td>音</td><td>美</td><td>ル</td><td>体</td><td>健</td><td>ス</td><td>パ</td><td>腕</td><td>脚</td><td>L</td><td>面</td><td>Ｈ</td><td nowrap>体格指数</td><td nowrap>性別</td><td nowrap>身長</td></tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>トップ・パイロット*</td><td>100</td><td>600</td><td>600</td><td>200</td><td>900</td><td>0</td><td>0</td><td>0</td><td>300</td><td>360</td><td>0</td><td>0</td><td>0</td><td>0</td><td>300</td><td>0</td><td>0</td><td nowrap>18-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>トップ・ガン**</td><td>200</td><td>1200</td><td>1200</td><td>400</td><td>1600</td><td>0</td><td>0</td><td>0</td><td>1200</td><td>1200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>600</td><td>0</td><td>0</td><td nowrap>19-22</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>弁護士</td><td>200</td><td>150</td><td>150</td><td>550</td><td>450</td><td>0</td><td>0</td><td>0</td><td>280</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>敏腕弁護士*</td><td>400</td><td>300</td><td>300</td><td>1000</td><td>900</td><td>0</td><td>0</td><td>0</td><td>600</td><td>240</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>カリスマ弁護士**</td><td>800</td><td>600</td><td>600</td><td>2000</td><td>1800</td><td>0</td><td>0</td><td>0</td><td>1200</td><td>500</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>力士</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>400</td><td>120</td><td>150</td><td>550</td><td>450</td><td>350</td><td>0</td><td>0</td><td>0</td><td nowrap>26-</td><td>男</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>大関*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>800</td><td>240</td><td>300</td><td>1100</td><td>900</td><td>700</td><td>0</td><td>0</td><td>0</td><td nowrap>26-</td><td>男</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>横綱**</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1600</td><td>500</td><td>600</td><td>2200</td><td>1800</td><td>1400</td><td>0</td><td>0</td><td>0</td><td nowrap>27-</td><td>男</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>AV女優</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>170</td><td>200</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>0</td><td>400</td><td nowrap>18-23</td><td>女</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>売れっ子AV女優*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>350</td><td>400</td><td>400</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>0</td><td>800</td><td nowrap>18-23</td><td>女</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ff9933 align=center><td nowrap rowspan=2>職業</td><td colspan=17>必要なパラメータ</td>
+    <td align=center colspan=3>条　件</td>
+  </tr>
+	<tr bgcolor=#ffcc33 align=center><td>国</td><td>数</td><td>理</td><td>社</td><td>英</td><td>音</td><td>美</td><td>ル</td><td>体</td><td>健</td><td>ス</td><td>パ</td><td>腕</td><td>脚</td><td>L</td><td>面</td><td>Ｈ</td><td nowrap>体格指数</td><td nowrap>性別</td><td nowrap>身長</td></tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>AV界の女王**</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>700</td><td>900</td><td>900</td><td>0</td><td>0</td><td>0</td><td>0</td><td>200</td><td>0</td><td>1600</td><td nowrap>18-23</td><td>女</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>アイドル</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>250</td><td>0</td><td>600</td><td>250</td><td>250</td><td>0</td><td>0</td><td>0</td><td>0</td><td>250</td><td>50</td><td>0</td><td nowrap>18-22</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>売れっ子アイドル*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>500</td><td>0</td><td>1200</td><td>500</td><td>500</td><td>0</td><td>0</td><td>0</td><td>0</td><td>500</td><td>200</td><td>0</td><td nowrap>18-21</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>スーパーアイドル**</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1500</td><td>0</td><td>2400</td><td>1000</td><td>1000</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1000</td><td>400</td><td>0</td><td nowrap>18-21</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>永遠のアイドル***</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3000</td><td>0</td><td>4000</td><td>2000</td><td>2000</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2000</td><td>800</td><td>0</td><td nowrap>19-20</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>サッカー選手</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>350</td><td>150</td><td>500</td><td>500</td><td>100</td><td>600</td><td>0</td><td>0</td><td>0</td><td nowrap>20-25</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>Ｊリーガー*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>700</td><td>300</td><td>1000</td><td>1000</td><td>300</td><td>1200</td><td>0</td><td>0</td><td>0</td><td nowrap>20-25</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>セリエA**</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>200</td><td>1400</td><td>600</td><td>2000</td><td>2000</td><td>600</td><td>2400</td><td>0</td><td>0</td><td>0</td><td nowrap>21-25</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>医者</td><td>80</td><td>650</td><td>650</td><td>80</td><td>400</td><td>0</td><td>0</td><td>0</td><td>250</td><td>250</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>大学病院院長*</td><td>160</td><td>1300</td><td>1300</td><td>160</td><td>800</td><td>0</td><td>0</td><td>0</td><td>500</td><td>500</td><td>0</td><td>0</td><td>0</td><td>0</td><td>200</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ff9933 align=center><td nowrap rowspan=2>職業</td><td colspan=17>必要なパラメータ</td>
+    <td align=center colspan=3>条　件</td>
+  </tr>
+	<tr bgcolor=#ffcc33 align=center><td>国</td><td>数</td><td>理</td><td>社</td><td>英</td><td>音</td><td>美</td><td>ル</td><td>体</td><td>健</td><td>ス</td><td>パ</td><td>腕</td><td>脚</td><td>L</td><td>面</td><td>Ｈ</td><td nowrap>体格指数</td><td nowrap>性別</td><td nowrap>身長</td></tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>ブラックジャック**</td><td>400</td><td>2600</td><td>2600</td><td>400</td><td>1600</td><td>0</td><td>0</td><td>0</td><td>1000</td><td>1000</td><td>0</td><td>0</td><td>0</td><td>0</td><td>500</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>野球選手</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>400</td><td>350</td><td>200</td><td>600</td><td>550</td><td>600</td><td>0</td><td>0</td><td>0</td><td nowrap>20-26</td><td>男</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>一流プロ野球選手*</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>800</td><td>700</td><td>400</td><td>1200</td><td>1100</td><td>1200</td><td>0</td><td>0</td><td>0</td><td nowrap>21-26</td><td>男</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>メジャーリーガー**</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>200</td><td>1600</td><td>1400</td><td>800</td><td>2400</td><td>2200</td><td>2400</td><td>0</td><td>0</td><td>0</td><td nowrap>21-26</td><td>男</td>
+    <td nowrap></td>
+  </tr>
+	<tr bgcolor=#ffcc66 align=center><td nowrap>オットセイ</td><td>0</td><td>50</td><td>0</td><td>50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>60</td><td>50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td nowrap>17-</td><td></td>
+    <td nowrap></td>
+  </tr>
+	</table>
+</body></html>
